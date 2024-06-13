@@ -53,10 +53,14 @@ h1 {
 .navbar-menu {
     list-style-type: none;
     display: flex;
-    height: 75svh;
-    /* padding: 10px 20px; */
+    height: 80svh;
+    padding: 10px 20px;
     flex-direction: column;
-    margin-top: 20px; /* Push menu items to the bottom */
+    margin-top: 0; /* Push menu items to the bottom */
+}
+
+.navbar-menu li {
+    margin-right: 0; /* Remove margin */
 }
 
 .navbar-menu li a {
@@ -65,9 +69,7 @@ h1 {
 }
 
 .navbar-menu li {
-    margin-right: 0;
-    padding: 12px 20px;
-    border-bottom: 1px solid white;
+    padding: 10px 20px;
     transition: color 0.3s ease;
 }
 
@@ -79,24 +81,14 @@ h1 {
 .profile-logout {
     display: flex;
     flex-direction: column;
-    background-color: #ddd;
     align-items: center;
-    justify-content: center;
-    text-align: right;
-    padding: 10px 40px;
-    height: 25svh;
+    padding: 10px 20px;
+    height: 20svh;
+    margin-top: auto; /* Push to the bottom */
+    margin-bottom: 20px; /* Adjust spacing */
 }
 
 .profile-logout a {
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 20px;
-    border-radius: 4px;
-    margin-left: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.profile-logout a.btn {
     color: #fff;
     text-decoration: none;
     padding: 8px 20px;
@@ -108,18 +100,13 @@ h1 {
     background-color: #007bff;
 }
 
-.profile-logout a.btn-primary:hover {
-    background-color: #0056b3;
-}
-
 .profile-logout a.btn-danger {
     background-color: #dc3545;
 }
 
-.profile-logout a.btn-danger:hover {
-    background-color: #333;
+.profile-logout a.btn:hover {
+    background-color: #0056b3;
 }
-
 
 /* Menu toggle button */
 .menu-toggle {
@@ -193,6 +180,11 @@ h1 {
 
     .menu-toggle {
         display: block;
+    }
+
+    .profile-logout {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .profile-logout a {
@@ -302,4 +294,34 @@ table th, table td {
 table th {
     background-color: #007bff;
     color: #fff;
+}
+
+/* Profile and logout buttons */
+.profile-logout {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.profile-logout a {
+    margin-left: 10px;
+}
+
+.profile-logout a.btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-logout a.btn.btn-primary {
+    background-color: #007bff;
+}
+
+.profile-logout a.btn.btn-danger {
+    background-color: #dc3545;
+}
+
+.profile-logout a.btn:hover {
+    background-color: #0056b3;
 }

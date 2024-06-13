@@ -59,15 +59,17 @@ h1 {
     margin-top: 20px; /* Push menu items to the bottom */
 }
 
+.navbar-menu li {
+    margin-right: 0; /* Remove margin */
+}
+
 .navbar-menu li a {
     color: #fff;
     text-decoration: none;
 }
 
 .navbar-menu li {
-    margin-right: 0;
-    padding: 12px 20px;
-    border-bottom: 1px solid white;
+    padding: 10px 20px;
     transition: color 0.3s ease;
 }
 
@@ -108,16 +110,12 @@ h1 {
     background-color: #007bff;
 }
 
-.profile-logout a.btn-primary:hover {
-    background-color: #0056b3;
-}
-
 .profile-logout a.btn-danger {
     background-color: #dc3545;
 }
 
 .profile-logout a.btn-danger:hover {
-    background-color: #333;
+    background-color: #111;
 }
 
 
