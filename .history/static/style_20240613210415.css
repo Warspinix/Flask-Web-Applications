@@ -58,12 +58,9 @@ body {
     margin-right: 0; /* Remove margin */
 }
 
-.navbar-menu li a {
+.navbar-menu li {
     color: #fff;
     text-decoration: none;
-}
-
-.navbar-menu li {
     padding: 10px 20px;
 
     transition: color 0.3s ease;

@@ -107,7 +107,9 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         cur = mysql.connection.cursor()
-        cur.execute("SELECT password, first_name FROM users WHERE id = %s", (form.user_id.data,))
+        print(form.user_id.data)
+        print(form.password.data)
+        cur.execute("SELECT password, first_name FROM users WHERE email = %s", (form.user_id.data,))
         result = cur.fetchone()
         print(result)
         if result:

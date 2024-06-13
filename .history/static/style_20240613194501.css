@@ -61,15 +61,11 @@ body {
 .navbar-menu li a {
     color: #fff;
     text-decoration: none;
-}
-
-.navbar-menu li {
     padding: 10px 20px;
-
     transition: color 0.3s ease;
 }
 
-.navbar-menu li:hover {
+.navbar-menu li a:hover {
     background-color: #007bff;
 }
 
