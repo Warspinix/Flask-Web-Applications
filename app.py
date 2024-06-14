@@ -109,9 +109,8 @@ def login():
         cur = mysql.connection.cursor()
         print(form.user_id.data)
         print(form.password.data)
-        cur.execute("SELECT password, first_name FROM users WHERE email = %s", (form.user_id.data,))
+        cur.execute("SELECT password, first_name FROM users WHERE id = %s", (form.user_id.data,))
         result = cur.fetchone()
-        print(result)
         if result:
             hashed_password = result[0]
             if bcrypt.check_password_hash(hashed_password, form.password.data):
