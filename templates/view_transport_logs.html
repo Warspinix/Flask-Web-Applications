@@ -101,23 +101,11 @@
         </div>
     </div>
 
-    <!-- JavaScript for Navbar Toggle -->
     <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const sideNav = document.getElementById('side-nav');
-        const navbar = document.getElementById('navbar');
-        const menu = document.getElementById('menu');
-
-        menuToggle.addEventListener('click', function () {
-            sideNav.classList.toggle('active');
-            navbar.classList.toggle('active');
-            menu.classList.toggle('active');
-        });
-
         document.getElementById('search_by').addEventListener('change', function () {
             var search_by = document.getElementById('search_by').value;
             if (search_by == 'id') {
-                document.getElementById('id_search').style.display = 'block';
+                document.getElementById('id_search').style.display ='block';
                 document.getElementById('month_search').style.display = 'none';
             } else if (search_by == 'month') {
                 document.getElementById('id_search').style.display = 'none';
