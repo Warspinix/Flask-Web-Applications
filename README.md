@@ -1,2 +1,2 @@
 # Inventory-Management-System
-A simple inventory management system built using HTML, CSS, Javascript, Flask, and MySQL.
+A complete inventory management system built using HTML, CSS, Javascript, Flask and MySQL with effective prompt engineering techniques. 
