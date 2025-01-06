@@ -1,2 +1,2 @@
-# Inventory-Management-System
-A complete inventory management system built using HTML, CSS, Javascript, Flask and MySQL with effective prompt engineering techniques. 
+# Flask Web Applications
+A collection of the variety of web applications developed with the help of the Flask web framework, alongside other versatile frontend and backend technologies.
